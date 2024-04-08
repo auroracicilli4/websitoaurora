@@ -1,0 +1,141 @@
+html { 
+    scroll-behavior: smooth;
+}
+
+body  { 
+    background-color: #9d9849;
+    color: #ffffcc;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img { 
+    max-width: 300%;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li{ 
+    margin: 0;
+    padding: 0;
+}
+
+header { 
+max-width: 1120px;
+margin: auto;
+display: flex;
+justify-content: space-between;
+padding: 48px 20px ;
+}
+
+header nav ul, footer nav ul {
+    display: flex;
+    list-style-type: none;
+     gap: 16px;
+}
+
+header p { 
+    font-weight: bold;
+}
+
+header nav ul a, footer nav ul a{
+text-decoration: none;
+color: #ffffcc;
+}
+
+header nav ul a:hover, footer nav ul a:hover { 
+    text-decoration: underline;
+    color: #ffffcc;
+}
+
+.info { 
+display: grid;
+max-width: 1120px;
+margin: auto;
+padding: 90px 20px;
+grid-template-columns: 2fr 1fr;
+line-height: 2.2;
+gap: 128px;
+}
+
+.info h1 { 
+    font-size: 60px;
+    line-height: 1.1;
+}
+
+.colore-1 { 
+    background-color: #636c4a;
+    padding: 120px 20px;
+}
+
+.conteiner { 
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    gap: 120px;
+}
+
+.colore-1 { 
+    background-color: #9d9849;
+    padding: 120px 20px;
+
+}
+
+.conteiner { 
+    max-width: 1120px;
+    margin: auto;
+    display: flex;
+    gap: 450px;
+}
+
+.conteiner .text { 
+    width: 50%;
+}
+
+.conteiner .image{ 
+    width: 33%;
+} 
+
+
+.conteiner .text h2  {
+    font-size: 26px;    
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+}
+
+.conteiner .text p { 
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 1.4rem;
+}
+
+
+footer{ 
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 20px;
+    font-size: 14px;
+
+} 
+
+@media (max-width: 200px) {
+.info{ 
+    grid-template-columns: 1fr;
+    gap: 36px;
+}
+
+.info h1 { 
+    font-size: 42px;
+}
+
+.conteiner .text { 
+    width: 100%;
+}
+
+.conteiner .image{ 
+    width: 100%;
+}
+
+.conteiner { 
+   flex-direction: column;
+    gap: 450px;
+}
+}
